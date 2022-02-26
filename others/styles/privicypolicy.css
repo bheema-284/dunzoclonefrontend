@@ -1,0 +1,141 @@
+#hedabt{
+    width: 100%;
+    height: 400px;
+    background-color: rgb(14, 14, 14);
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    font-family: "Poppins", sans-serif;
+}
+#dunzo_logo{
+    width: 340px;
+    height: 180px;
+    background-color:#171e30 ;
+   
+}
+#content{
+    margin-top: 30px;
+    width: 70%;
+    margin: auto;
+    font-family: "Poppins", sans-serif;
+    line-height: 25px;
+}
+#pa{
+    color: white;
+}
+p{
+    color: rgb(78, 78, 78);
+}
+#cont{
+    width: 80%;
+    margin: auto;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    margin-top: 0%;
+    line-height: 25px;
+}
+#textcon{
+    width: 100%;
+
+}
+#texdiv{
+    font-family: "Poppins", sans-serif;
+}
+#hedtex{
+    width: 100%;
+    margin-top: 100px;
+    font-family: "Poppins", sans-serif;
+}
+#h1{
+    color: #7cff87;
+}
+img{
+    width: 200px;
+    height: 60px;
+    border-radius: 2px;
+}
+#inp{
+    width: 450px;
+    height: 50px;
+    border: transparent;
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px 3px whitesmoke;
+    font-size: 16px;
+}
+
+#h4t{
+    width: 100%;
+}
+#bottext{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    grid-gap: 50px;
+    margin-top: 50px;
+    margin: auto;
+}
+
+#rboximg{
+    /* margin-top: 160px; */
+    font-family: "Poppins", sans-serif;
+}
+#rimg{
+    width: 70%;
+    height: 500px;
+    margin-left: 120px;
+}
+
+#bottomtext{
+    margin-top: 60px;
+    width: 100%;
+    margin: auto;    
+    font-family: "Poppins", sans-serif;
+}
+
+#p{
+    text-align: center;
+    color: rgb(192, 192, 192);
+}
+#a{
+    text-decoration: none;
+    color: black;
+}
+#a:hover{
+    text-decoration: underline;
+    color: black;
+}
+#bottm{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Poppins", sans-serif;
+
+}
+#lbottom{
+    width: 70%;
+    display: flex;
+    gap: 20px;
+}
+#limga{
+    width: 40px;
+    height: 40px;
+    padding: 6px;
+}
+#rbottom{
+    width: 16%;
+    display: flex;
+    gap: 20px;
+}
+#b{
+    text-decoration: none;
+    color: black;
+}
+#b:hover{
+    text-decoration: underline;
+    color: rgb(134, 134, 134);
+
+}
+#c{
+text-decoration: none;
+color: black;
+font-weight: bold;
+}

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="./styles/search.css">
+    <title>Search</title>    
+    </head>
+<body>
+    <div id="Mnavbar"></div>
+<!-- navyBlue -->
+        <div id="Mnavy">
+            <img id="navy_icon" src="./images/HomeIcon.png">
+            <h3 class="navy_text1">Order Paan items, munchies and much more on our new Dunzo Mo app</h3>
+            <h3 class="navy_text2">Download Dunzo Mo app now ></h3>
+        </div>    
+
+<!-- Business function -->
+          <div class="form-popupb" id="myForm1">
+            <button id="cancel1" type="button" class="btn cancel">X</button>
+            <form class="form-container">                
+            <div id="formdata">
+                <img id="login_img1" src="https://resources.dunzo.com/web-assets/prod/_next/static/images/d4b-header-icon-f1bb33e3de2728b2ee145cfc7c766a5a.png">
+                <div>
+                  <p class="text_p1"><a class="text_p1" href="">Need Delivery partners?</a></p>          
+             <p class="text_name1">Signup with Dunzo for business and get your first delivery free!</p>
+              </div>
+             </div>
+             <hr>
+             <div id="formdata">
+             <img id="login_img1" src="https://resources.dunzo.com/web-assets/prod/_next/static/images/b2c-merchant-header-icon-c16bae886aa08eb24968f219737e9e4a.png" alt="">
+            <div>
+                <p class="text_p1"><a class="text_p1" href="">Sell products on Dunzo</a></p>
+            <p class="text_name1">Apply to get your product listed on the Dunzo app & website</p>
+            </div>
+            </div>
+            
+            </form>
+          </div>             
+          
+         
+         <form class="form-popupd" id="myForm3">           
+             
+            <img id="imgdd" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBhUuz2vc2-RYgLCtFtTzjY9oApsKqIMXVdQ&usqp=CAU" alt="">
+           
+           <p id="texa">Your cart is waiting to be filled</p>
+           <p id="texb">Make your task list and Dunzo it now!</p>
+           <button id="shopa">Start Shopping</button>
+           <button id="cancel3" type="button" class="btn cancel">X</button>  
+           </form>
+        
+        <!-- Location Popup -->
+        <div id="Search_loc_container">
+            <div id="display_location">
+                <h4 id="loc_name">Add your Location</h4>
+                <button id="loc_cancel">X</button>
+            </div>
+            <br>
+            <div id="search_location">
+                <input type="text" id="loc_places">
+                <button id="loc_submit">Add</button>
+            </div>
+            <div id="loc_content"></div>
+            <img id="loc_boy" src="./images/location_boy.png">
+        </div>
+
+        <!-- Login Popup -->
+        <div class="form-popup" id="myForm">
+            <button id="cancel" type="button" class="btn cancel">X</button>
+            <img id="login_img" src="https://resources.dunzo.com/web-assets/prod/_next/static/images/signin-icon-cb6e6a706f01b84896e60235a2392ac9.png">
+            <form class="form-container">
+              <h2 class="text_sign">Sign in</h2>
+              <p class="text_p">Get Started with DUNZO</p>          
+             <p class="text_name">*Enter your phone number</p>
+             <br>
+             <input id="num" type="number" placeholder="+91 Mobile Number">
+             <br>
+             <div id="terms_flex">
+              <input id="checkbox" type="checkbox">
+              <h4 class="terms">I accept the Terms of Use & Privacy Policy  |  View T&C</h4>
+             </div>
+             <button id="otpsubmit">Send OTP</button>
+            </form>
+          </div>
+
+          <!-- OTP Popup -->
+          <div class="form-otp" id="myOTP">
+            <button id="cancel_otp" type="button" class="btn cancel">X</button>
+            <img id="login_img" src="https://resources.dunzo.com/web-assets/prod/_next/static/images/signin-icon-cb6e6a706f01b84896e60235a2392ac9.png">
+            <form class="form-container">
+              <h2 class="text_sign">Sign in</h2>
+              <p class="text_p">Get Started with DUNZO</p>          
+              <h4 id="enterotp">Enter the OTP</h4>
+              <div id="otpgrid">
+                <input type="number">
+                <input type="number">
+                <input type="number">
+                <input type="number">
+                <input type="number">
+                <input type="number">
+              </div>
+              <a href="homepage.html"><button id="accountpage">Verify and Continue</a></button>
+             </form>
+        </div>
+
+
+
+
+    <div id="Mcontent">
+       <div id="contaaaaaaaaaaa">           
+            <h3> You Can Serach as : fruits,restarent,vegetables,groceries </h3>            
+       </div>
+        <input id="search_bar" type="text">
+        <button id="search">Search</button>
+    </div>
+
+
+    <div id="show"></div>
+
+ <!-- Footer Part -->
+    <div id="footer">
+        
+    </div>
+
+
+</body>
+</html>
+
+<script type="module">
+
+// navbar Dynamic
+import navbar from './components/navbar.js';
+
+let navbar_container = document.getElementById('Mnavbar');
+
+navbar_container.innerHTML = navbar();
+
+    // footer Dynamic
+import footer from './components/footer.js';
+
+let footer_container = document.getElementById('footer');
+
+footer_container.innerHTML = footer()
+
+//search data from search.js
+import {veggies , fruits, mart,marts} from './scripts/search.js'
+
+var empty = document.getElementById('show');
+
+document.getElementById('search').addEventListener('click', function(){
+
+    var show = document.getElementById('search_bar').value;
+    if(show === 'fruits'){
+
+        empty.innerHTML = null;
+
+       fruits.map((e)=>{
+
+          let div = document.createElement('div');
+          div.setAttribute('id', 'div')
+
+          let img = document.createElement('img');
+          img.src = e.image;
+          img.setAttribute('id', 'img');
+
+          let name = document.createElement('h4');
+          name.textContent = e.selection2;
+          name.setAttribute('id', 'name');
+
+          div.append(img, name);
+          document.getElementById('show').append(div)
+
+        })
+    }
+    else if(show === 'vegetables'){
+
+        empty.innerHTML = null;
+
+        veggies.map((e)=>{
+
+          let div = document.createElement('div');
+          div.setAttribute('id', 'div')
+
+          let img = document.createElement('img');
+          img.src = e.image;
+          img.setAttribute('id', 'img');
+
+          let name = document.createElement('h4');
+          name.textContent = e.selection1;
+          name.setAttribute('id', 'name');
+
+          div.append(img, name);
+          document.getElementById('show').append(div)
+        })
+    }
+    else if(show === 'groceries'){
+        empty.innerHTML = null;
+
+        mart.map((e)=>{
+
+          let div = document.createElement('div');
+          div.setAttribute('id', 'div')
+
+          let img = document.createElement('img');
+          img.src = e.image;
+          img.setAttribute('id', 'img');
+
+          let name = document.createElement('h4');
+          name.textContent = e.selection1;
+          name.setAttribute('id', 'name');
+
+          div.append(img, name);
+          document.getElementById('show').append(div)
+        })
+    }
+
+    else if(show === 'restarent'){
+        empty.innerHTML = null;
+
+        marts.map((e)=>{
+
+          let div = document.createElement('div');
+          div.setAttribute('id', 'div')
+
+          let img = document.createElement('img');
+          img.src = e.image;
+          img.setAttribute('id', 'img');
+
+          let name = document.createElement('h4');
+          name.textContent = e.selection1;
+          name.setAttribute('id', 'name');
+
+          div.append(img, name);
+          document.getElementById('show').append(div)
+        })
+    }
+})
+
+    
+//homepage navigation
+document.getElementById('nav_img').addEventListener('click', function(){
+
+window.location.href = 'homepage.html';
+})
+
+
+
+
+//location display
+var location = document.getElementById('nav_location').addEventListener('click', displayLocation);
+var closeLocation = document.getElementById('loc_cancel').addEventListener('click', closelocation);
+
+function displayLocation(){
+
+    document.getElementById('Search_loc_container').style.display = 'block';
+    document.getElementById('MmainImg').style.display = "none";
+    document.getElementById('Mgrid1').style.display = "none";
+    document.getElementById('Mgrid2').style.display = "none";
+    document.getElementById('Mmobile').style.display = "none";
+}
+
+function closelocation(){
+    document.getElementById('Search_loc_container').style.display = 'none';
+    document.getElementById('MmainImg').style.display = "none";
+    document.getElementById('Mgrid1').style.display = "block";
+    document.getElementById('Mgrid2').style.display = "block";
+    document.getElementById('Mmobile').style.display = "block";
+}
+let msg = document.getElementById('loc');
+let display_location = document.getElementById('loc_submit').addEventListener('click', displayMap);
+async function displayMap(){
+let places = document.getElementById('loc_places').value;
+let res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${places}&appid=b583ff57ac8a4cb13f0ac928e8d36ddf&units=metric`);
+let data = await res.json();
+append(data)
+console.log(data);
+}
+
+function append(e){
+
+    var div = document.createElement('div');
+
+    var place = document.createElement('h4');
+    place.textContent = e.name;
+    place.setAttribute('class', 'place');
+    // console.log(place);
+    var ida = place.innerHTML;
+    console.log(ida)
+
+    place.addEventListener('click', ()=>{
+        msg.textContent = ida;
+        document.getElementById('city_name_msg').textContent = ida;
+        document.getElementById('city_details_msg').textContent = 'Why step out when you can get everything delivered home with the tap of a button? Bangalore’s favourite delivery app gets you Food, Grocery, Medicine, Pet Supplies, Fruits & Vegetables, Meat & Fish, Health & Wellness, Gifts and Send Packages from one end of the city to the other. From your local kirana stores to your favourite brands, grocery shopping to your forgotten charger, we are always on the move for you. Why worry about your chores, when you can get it all Dun!';
+        document.getElementById('Search_loc_container').style.display = 'none';
+        document.getElementById('MmainImg').style.display = "block";
+        document.getElementById('Mgrid1').style.display = "block";
+        document.getElementById('Mgrid2').style.display = "block";
+        document.getElementById('Mmobile').style.display = "block";
+    })    
+    div.append(place);
+    document.getElementById('loc_content').append(div)    
+}
+//Search navigation
+document.getElementById('icon_search').addEventListener('click', ()=>{
+    window.location.href = 'search.html';
+})
+//Search navigation
+document.getElementById('icon1').addEventListener('click', ()=>{
+    window.location.href = 'search.html';
+})
+
+//Login Popup
+var openLogin = document.getElementById('nav_signin').addEventListener('click', openForm);
+var closeLogin = document.getElementById('cancel').addEventListener('click', closeForm);
+
+function openForm() {
+    
+  document.getElementById("myForm").style.display = "block";
+  document.getElementById('MmainImg').style.display = "none";
+  document.getElementById('Mgrid1').style.display = "none";
+  document.getElementById('Mgrid2').style.display = "none";
+  document.getElementById('Mmobile').style.display = "none";
+}
+function closeForm() {
+  document.getElementById("myForm").style.display = 'none';
+  document.getElementById('MmainImg').style.display = "block";
+  document.getElementById('Mgrid1').style.display = "block";
+  document.getElementById('Mgrid2').style.display = "block";
+  document.getElementById('Mmobile').style.display = "block";
+}
+
+
+//OTP Popup
+var enterotp = document.getElementById('otpsubmit').addEventListener('click', enterOtp);
+var cancelorp = document.getElementById('cancel_otp').addEventListener('click', submitForm);
+
+function enterOtp(){
+  document.getElementById("myForm").innerHTML = null;
+  document.getElementById("myOTP").style.display = "block";
+  document.getElementById("myForm").style.display = "none";
+  document.getElementById('MmainImg').style.display = "none";
+  document.getElementById('Mgrid1').style.display = "none";
+  document.getElementById('Mgrid2').style.display = "none";
+  document.getElementById('Mmobile').style.display = "none";
+}
+
+function submitForm(){
+  document.getElementById("myForm").style.display = 'none';
+  document.getElementById("myOTP").style.display = "none";
+  document.getElementById('MmainImg').style.display = "block";
+  document.getElementById('Mgrid1').style.display = "block";
+  document.getElementById('Mgrid2').style.display = "block";
+  document.getElementById('Mmobile').style.display = "block";
+
+
+}
+thnkslogn = document.getElementById('accountpage').addEventListener('click', thnkslogn);
+         function thnkslogn(){
+         alert("Login Sucessfull")
+         window.length.href = "homepage.html"
+           }
+var openbiss = document.getElementById('title2').addEventListener('click', openForm1);
+var closebiss = document.getElementById('cancel1').addEventListener('click', closeForm1);
+function openForm1() {    
+  document.getElementById("myForm1").style.display = "block";
+}
+function closeForm1() {
+  document.getElementById("myForm1").style.display = 'none';
+ }
+  
+var cartopen = document.getElementById('nav_cart').addEventListener('click', openForm3);
+var cartclose = document.getElementById('cancel3').addEventListener('click', closeForm3);
+function openForm3() {    
+  document.getElementById("myForm3").style.display = "block";
+  document.getElementById("myForm").style.display = "none";
+  document.getElementById('MmainImg').style.display = "none";
+  document.getElementById('Mgrid1').style.display = "none";
+  document.getElementById('Mgrid2').style.display = "none";
+  document.getElementById('Mmobile').style.display = "none";
+}
+function closeForm3() {
+  document.getElementById("myForm3").style.display = 'none';
+  document.getElementById('MmainImg').style.display = "block";
+  document.getElementById('Mgrid1').style.display = "block";
+  document.getElementById('Mgrid2').style.display = "block";
+  document.getElementById('Mmobile').style.display = "block";
+}
+</script>

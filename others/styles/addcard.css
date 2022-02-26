@@ -1,0 +1,146 @@
+#messg{
+    width: 40%;
+    margin: auto;
+       font-family: "Poppins", sans-serif;
+       text-align: center;
+}
+.form-popup {   
+    width: 30%;
+    margin: auto;
+    border: 3px solid #f1f1f1;    
+    margin-top: 100px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  #cancel{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: white;
+    margin-left: 300px;
+    cursor: pointer;
+    font-size: larger;
+    font-weight: bolder;
+    margin-top: 3px;
+  }
+  
+  #login_img{
+    width: 70px;
+    height: 70px;
+    margin-left: 20px;
+  }
+  .text_sign{
+    padding-left: 20px;
+    font-weight: 300;
+    line-height: 5px;
+    font-family: "Poppins", sans-serif;
+  }
+  .text_p{
+    padding-left: 20px;
+    line-height: 5px;
+    color: gray;
+  }
+  .text_name{
+    padding-left: 20px;
+    padding-top: 10px;
+  }
+  #num{
+    width: 40px;        
+    height: 40px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    line-height: 5px;
+    color: gray;    
+    font-size: medium;
+    font-weight: bolder;
+    color: black;
+  }
+
+  #num1{
+    width: 140px;        
+    height: 40px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    line-height: 5px;
+    color: gray;    
+    padding-left: 50px;
+    font-size: medium;
+    font-weight: bolder;
+    color: black;
+  }
+
+  #num2{
+    width: 70%;        
+    height: 40px;
+    margin: auto;
+    margin-left: 20px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    line-height: 5px;
+    color: gray;    
+    padding-left: 50px;
+    font-size: medium;
+    font-weight: bolder;
+    color: black;
+  }
+
+
+  #num3{
+    width: 70%;        
+    height: 40px;
+    margin: auto;
+    margin-left: 20px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    line-height: 5px;
+    color: gray;    
+    padding-left: 50px;
+    font-size: medium;
+    font-weight: bolder;
+    color: black;
+  }
+  #checkbox{
+    margin-left: 20px;
+    margin-top: 30px;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    border: 1px solid gray;
+  }
+  #terms_flex{
+    display: flex;
+  }
+  .terms{
+    padding-top: 10px;
+    font-weight: 300;
+    padding-left: 10px;
+  }
+  #otpsubmit11{
+    margin-left: 20px;
+    width: 90%;
+    height: 50px;
+    border-radius: 30px;
+    border: 1px solid gray;
+    background-color: #00d290;
+    color: white;
+    font-size: medium;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+#h2222{
+    padding-left: 20px;
+}
+#cddel{
+    display: inline;
+    gap: 10px;
+    margin-left: 20px;
+   justify-content: space-around;
+}
+#aa{
+  color: white;
+  text-decoration: none;
+}

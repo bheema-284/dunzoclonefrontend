@@ -1,0 +1,152 @@
+#imgdivs{
+     display: grid;    
+     grid-template-columns: repeat(2,1fr); 
+     background-color:#00ffae ;
+     font-family: "Poppins", sans-serif;
+     height: 900px;
+     padding-left: 20px;
+     margin-bottom: 50px;
+}
+body{
+    margin-top: 0%;
+     font-family: "Poppins", sans-serif;
+}
+#lin{
+    color: white;
+    font-weight: bold;
+}
+#lbox{
+    width: 60%;
+    margin-top: 50px;
+}
+button{
+   font-family: "Poppins", sans-serif;
+   background-color: #212a42; 
+   width: 300px;
+   height: 50px;
+   font-size: 18px;
+   color: white;
+   border-radius: 10px;
+   border: transparent;
+}
+#aa{
+    font-size: 40px;
+    line-height: 40px;
+}
+#grid11{
+    margin-top: 50px;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+}
+#cont1{
+    display: flex;
+}
+#imgab{
+    width: 40%;
+    background-color: #00ffae;
+}
+#riders{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 40x;
+    margin-top: 50px;
+}
+#contaaa{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 40x;
+    margin-top: 50px;
+}
+#h11{
+    font-size: 40px;
+    font-weight: bold;
+}
+#conaaaaa{
+    width: 60%;
+}
+#imgaaaaa{
+    width: 30%;
+    border-radius: 50%;
+    
+}
+#comd{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#botcon{
+    width: 80%;
+    height: 100px;
+    background-color:#00d290 ;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    border-radius: 20px;
+}
+#limga{
+    width: 50px;
+    height: 50px;
+    padding: 50px;
+}
+#bottomaaaa{
+    width: 100%;
+    height: 160px;
+    background-color:#212a42;
+}
+#bottm{
+    display: flex;
+    width: 100%;
+    height: 120px;
+    justify-content: space-between;
+    font-family: "Poppins", sans-serif;
+    background-color: #1a1f30; 
+    margin-top: 50px;
+}
+#lbottom{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    margin-top: 50px;
+    padding-left: 20px;
+}
+#limga{
+    width: 80px;
+    height: 80px;
+    padding: 20px;
+}
+#rbottom{
+    width: 300px;
+    height:200px ;
+    display: flex;
+    gap: 20px;
+    margin-top: 0px;
+    padding-right: 30px;
+}
+#b{
+    text-decoration: none;
+    color: white;
+}
+#b:hover{
+    text-decoration: underline;
+    color: rgb(134, 134, 134);
+}
+#abcbtm{
+    background-color: #1a1f30;
+    padding-left: 60px;
+    gap: 30px;
+    height: 80px;
+}
+#itms{
+    display: flex;
+    gap: 30px;
+    padding-left: 100px;
+}
+#imgrid{
+    width: 300px;
+    height: 100%;
+}
+#abccon{
+    padding-left: 20px;
+}

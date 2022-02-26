@@ -1,0 +1,506 @@
+body {
+  background-color: rgb(245, 243, 243);
+}
+#cont {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1%;
+  background-color: white;
+}
+#logo {
+  width: 10%;
+  margin-left: 10%;
+}
+#logo > img {
+  width: 100%;
+}
+#profile {
+  display: flex;
+  width: 90%;
+  justify-content: end;
+  margin-right: 10%;
+}
+#container {
+  margin: auto;
+  position: relative;
+  width: 80%;
+  height: 350px;
+  font-size: 10px;
+  display: flex;
+}
+#box2 {
+  position: absolute;
+  width: 30%;
+  margin-left: 71%;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  background-color: white;
+}
+#box1 {
+  position: absolute;
+  width: 70%;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  background-color: white;
+}
+#rules {
+  height: 70%;
+}
+.overlay {
+  display: none;
+  z-index: 9;
+  height: 450px;
+  width: 50%;
+  margin: auto;
+  background-color: white;
+  border-radius: 10px;
+}
+p {
+  color: black;
+  margin-left: 10px;
+}
+span {
+  color: #878c9b;
+}
+#head {
+  color: #36a882;
+}
+img {
+  width: 100%;
+  height: 30%;
+}
+#package {
+  margin-left: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 0px;
+}
+.arrow {
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+  background-color: #06d393;
+  color: white;
+  border-radius: 20px;
+  margin-bottom: 0px;
+}
+#lines > p {
+  margin-top: 0px;
+  font-size: 6px;
+  line-height: 2px;
+  font-weight: bolder;
+  color: #878c9b;
+  margin-left: 9px;
+}
+#sendbox {
+  display: flex;
+  margin-top: 50px;
+}
+input {
+  border: 1px solid transparent;
+}
+hr {
+  background-color: #06d393;
+  border: 0.5px solid transparent;
+  margin-bottom: 20px;
+}
+.location {
+  color: #878c9b;
+  width: 500px;
+  font-size: 12px;
+}
+.location > p {
+  font-size: 8px;
+  color: #878c9b;
+}
+#symbol {
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+#instructions {
+  width: 400px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: rgb(247, 243, 243);
+}
+#instruct {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+#terms > p {
+  margin-left: 30px;
+  width: 375px;
+  font-size: 8px;
+  color: #878c9b;
+}
+.head {
+  width: 100%;
+  /* margin-left: 30px; */
+  color: black;
+}
+.head > input {
+  width: 80%;
+  height: 30px;
+  margin-left: 9%;
+  border: 1px solid #06d393;
+  border-radius: 10px;
+}
+.maps {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.div2 {
+  height: 40%;
+  width: 100%;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+.div2:hover {
+  cursor: pointer;
+}
+.div2 > p {
+  color: #878c9b;
+}
+.image {
+  height: 40%;
+  width: 20%;
+}
+.div3 {
+  margin-top: 20px;
+  display: grid;
+}
+.div3 > div {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: space-around;
+  gap: 20px;
+}
+.div3 input {
+  width: 150px;
+  border-radius: 10px;
+  height: 30px;
+  border: 1px solid #878c9b;
+}
+.heading {
+  display: flex;
+  padding: 0px 10px;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+.close:hover {
+  cursor: pointer;
+}
+.div5 {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+}
+.continue {
+  padding: 2% 20%;
+  background-color: #00d290;
+  color: white;
+  border-radius: 30px;
+  border: 1px solid transparent;
+}
+#invoice {
+  display: flex;
+  align-items: center;
+}
+#cart {
+  display: none;
+  height: 70%;
+}
+#cart > p {
+  font-size: 8px;
+  color: #878c9b;
+  font-family: "Poppins", sans-serif;
+}
+.price {
+  display: flex;
+  justify-content: space-between;
+}
+#pay {
+  margin-left: 5%;
+}
+#paybutton {
+  padding: 2% 15%;
+  background-color: #00d290;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  color: white;
+  margin-bottom: 30px;
+}
+#rightbox{
+  margin-left: auto;
+}
+#delimg{
+  width: 80%;
+  height: 100%;
+}
+#textc{
+  width: 44%;
+  margin-left: 60px;
+}
+#leftbox{
+  margin-left: 50px;
+  width: 100%;
+  border-radius: 1px solid black  ;
+}
+#imggoogle{
+  width: 52%;
+  height: 55px;
+  border-radius: 5px;
+}
+#imges{
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  margin-left: 60px;
+}
+#inp{
+    width: 400px;
+    height: 50px;
+    border: transparent;
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px 3px whitesmoke;
+    font-size: 16px;
+}
+#searc{
+   margin-left: 60px;
+   width: 400px;
+}
+#bottom{
+  display: flex;
+  width: 100%;
+  height: 300px;
+  background-color: #00d290;
+  margin-top: 140px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+#h12{
+font-weight: bold;
+}
+#mapaaaa{
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+}
+#cloc{
+  width: 20px;
+  height: 20px;
+  padding: 13px;
+  color: #00d290;
+}
+
+#curloc{
+  display: flex;
+}
+#instruct {
+  border: 1px solid transparent;
+  width: 500px;
+  height: 55px;
+  font-size: 14px;
+  border-radius: 8px;
+  background-color: rgb(243, 243, 243);
+}
+#mapdiv{
+  margin: auto;
+  width: 80%;
+}
+#mapimg{
+  width: 80%;
+  margin: auto;
+}
+#icn1{
+  cursor: pointer;
+}
+#icn2{
+  cursor: pointer;
+}
+
+
+
+ /* Login Popup */
+.form-popup {
+    display: none;
+    width: 30%;
+    margin: auto;
+    border: 3px solid #f1f1f1;    
+    margin-top: 100px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  #cancel{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: white;
+    margin-left: 300px;
+    cursor: pointer;
+    font-size: larger;
+    font-weight: bolder;
+    margin-top: 3px;
+  }
+  
+  #login_img{
+    width: 70px;
+    height: 70px;
+    margin-left: 20px;
+  }
+  .text_sign{
+    padding-left: 20px;
+    font-weight: 300;
+    line-height: 5px;
+  }
+  .text_p{
+    padding-left: 20px;
+    line-height: 5px;
+    color: gray;
+  }
+  .text_name{
+    padding-left: 20px;
+    padding-top: 10px;
+  }
+  #num{
+    width: 80%;
+    margin: auto;
+    margin-left: 20px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    line-height: 5px;
+    color: gray;
+    padding-left: 30px;
+    font-size: medium;
+    font-weight: bolder;
+    color: black;
+  }
+  #checkbox{
+    margin-left: 20px;
+    margin-top: 30px;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    border: 1px solid gray;
+  }
+  #terms_flex{
+    display: flex;
+  }
+  .terms{
+    padding-top: 10px;
+    font-weight: 300;
+    padding-left: 10px;
+  }
+  #otpsubmit{
+    margin-left: 20px;
+    width: 90%;
+    height: 50px;
+    border-radius: 20px;
+    border: 1px solid gray;
+    background-color: #00d290;
+    color: white;
+    font-size: medium;
+    font-weight: bolder;
+    margin-bottom: 20px;
+  }
+
+  /* OTP Popup */
+  #accountpage{
+    margin-left: 20px;
+    width: 90%;
+    height: 50px;
+    border-radius: 20px;
+    border: 1px solid gray;
+    background-color: #00d290;
+    color: white;
+    font-size: medium;
+    font-weight: bolder;
+    margin-bottom: 20px;
+  }
+  #enterotp{
+    padding-left: 20px;
+    padding-top: 10px;
+    color: gray;
+  }
+  #otpgrid{
+    margin-left: 20px;
+    margin-right: 20px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px;
+  }
+  #otpgrid>input{
+    width: 100%;
+    margin-bottom: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    font-size: x-large;
+    font-weight: bolder;
+    color: black;
+  }
+  .form-otp {
+    display: none;
+    width: 30%;
+    margin: auto;
+    border: 3px solid #f1f1f1;    
+    margin-top: 100px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    font-family: "Poppins", sans-serif;
+  }
+  #cancel_otp{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid white;   
+    background-color: white; 
+    margin-left: 300px;
+    cursor: pointer;
+    font-size: larger;
+    font-weight: bolder;
+    margin-top: 3px;
+  }
+ #accountpage > a{
+      color: white;
+  }
+  #nav_account{
+    width: 60px;
+    height: 100%;
+    margin-left: 30px;
+}
+#icon_profile{
+    width: 40%;
+    height: 35%;
+    font-weight: 200;
+    color: gray;
+    margin-top: 10px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+#icon_profile:hover{
+    color: #00d290;
+}
+#icon3{
+    height: 20%;
+    width: 100%;
+    padding-top: 0px;
+    padding-left: 7px;
+    font-family: "Poppins", sans-serif;
+    font-size: small;
+}
+#icon3:hover{
+    color: #00d290;
+}     
